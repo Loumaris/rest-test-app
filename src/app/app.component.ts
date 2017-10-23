@@ -27,7 +27,7 @@ export class AppComponent {
     }
 
     public getJSON(): Observable<any> {
-         return this.http.get("http://localhost:4567/echo")
+         return this.http.get("http://api.test.dockerist.io/echo")
                          .map((res:any) => res.json());
 
      }
